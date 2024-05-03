@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { CardProps } from "../types/types"
+import { CardProps } from "../../types/types"
 
 const CardsData: CardProps[] = [
     {
