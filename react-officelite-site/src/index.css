@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.custom-after::after {
+  content: "";
+  background: #25293A;
+  background-image: url(/assets/sign-up/bg-pattern-side.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1202px;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}
+
+@media (min-width: 64em) {
+  .custom-after::after {
+    height: 100%;
+    width: 30%;
+  }
+}
